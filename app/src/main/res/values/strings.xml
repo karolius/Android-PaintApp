@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PaintApp</string>
+    <string name="action_settings">Ustawienia</string>
+    <string name="cleanScreenButtonText">X</string>
+</resources>

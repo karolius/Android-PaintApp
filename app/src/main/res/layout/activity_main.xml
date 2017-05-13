@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.karol.paintapp.MainActivity">
+
+    <com.example.karol.paintapp.PaintActivity
+        android:id="@+id/powierzchnia_rysunku"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="8dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/redButton"
+        android:background="@android:color/holo_red_dark"
+        android:layout_width="85dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="4dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="4dp"
+        android:layout_alignParentLeft="true"/>
+    <Button
+        android:id="@+id/yellowButton"
+        android:background="@android:color/holo_orange_light"
+        android:layout_width="85dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="4dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/redButton"/>
+    <Button
+        android:id="@+id/blueButton"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_width="85dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="4dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/yellowButton"/>
+    <Button
+        android:id="@+id/greenButton"
+        android:background="@android:color/holo_green_dark"
+        android:layout_width="85dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="4dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/blueButton"/>
+    <Button
+        android:id="@+id/cleanScreenButton"
+        android:layout_width="40dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/greenButton"
+        android:textSize="20sp"
+        android:text="@string/cleanScreenButtonText"/>
+</RelativeLayout>
